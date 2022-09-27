@@ -50,13 +50,9 @@ img{
 .gallary-container{
     margin-top: 30px;
     gap: 20px;
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* grid-auto-columns: minmax(250px, auto); */
-
+    justify-content: ;
 }
 .column{
-    /* display: grid; */
     gap: 20px;
     flex-direction: column;
 }
