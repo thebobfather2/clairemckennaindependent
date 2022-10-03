@@ -16,6 +16,15 @@ img{
     max-width: 1440px;
     margin: auto;
 }
+.tab-content{
+    display: none;
+}
+.tablinks{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 .d-flex{
     display: flex;
 }
@@ -50,17 +59,16 @@ img{
 .gallary-container{
     margin-top: 30px;
     gap: 20px;
-    justify-content: ;
 }
 .column{
     gap: 20px;
     flex-direction: column;
 }
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     .gallary-container{
         flex-direction: column;
     }
-}
+} */
 
 
 
