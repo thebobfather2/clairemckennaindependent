@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="./Assets/style2.css">
+</head>
+<body>
+    <div class="website_container">
+        <div class="navbar">
+            <button href="" class="tablinks" onclick="showPanel(0)">FOOD</button></li>
+            <button href="" class="tablinks" onclick="showPanel(1)">INTERIORS</button></li>
+            <button href="" class="tablinks" onclick="showPanel(2)">STREET</button></li>
+            <button href="" class="tablinks" onclick="showPanel(3)">ABOUT ME</button></li>
+        </div>
+        <div class="content">
+            <div class="tabContent">
+                <div class="img-grid2">
+                        <div><img src="./Assets/Images/Food/1.jpg" alt=""></div>
+                        <div class="hs2" ><img  src="./Assets/Images/Food/18.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/2.jpg" alt=""></div>
+                        <div class="hs2" ><img  src="./Assets/Images/Food/17.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/6.jpg" alt=""></div>
+                        <div class="hs2" ><img  src="./Assets/Images/Food/19.jpg" alt=""></div>
+                        <div class="hs2" ><img  src="./Assets/Images/Food/15.jpg" alt=""></div>
+                        <div class="hs2" ><img  src="./Assets/Images/Food/7.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/8.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/9.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/10.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/11.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/12.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/4.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/13.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/16.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/14.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/3.jpg" alt=""></div>
+                        <div><img src="./Assets/Images/Food/5.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="tabContent">
+                <div class="img-grid2">
+                    <div class="hs2"><img  src="./Assets/Images/Interior/1.jpg" alt=""></div>
+                    <div><img src="./Assets/Images/Interior/2.jpg" alt=""></div>
+                    <div><img src="./Assets/Images/Interior/3.jpg" alt=""></div>
+                    <div><img src="./Assets/Images/Interior/4.jpg" alt=""></div>
+                    <div class="ws2"><img  src="./Assets/Images/Interior/5.jpg" alt=""></div>
+                    <div><img src="./Assets/Images/Interior/6.jpg" alt=""></div>
+                    <div><img src="./Assets/Images/Interior/7.jpg" alt=""></div>
+                    <div><img src="./Assets/Images/Interior/8.jpg" alt=""></div>
+                    <div><img src="./Assets/Images/Interior/9.jpg" alt=""></div>
+                    <div><img src="./Assets/Images/Interior/10.jpg" alt=""></div>
+                    <div><img src="./Assets/Images/Interior/11.jpg" alt=""></div>
+                    <div><img src="./Assets/Images/Interior/12.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="tabContent">
+                <h3>Blog Content</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quasi beatae quae unde, fuga similique laboriosam totam quos veritatis aut officia incidunt, necessitatibus quas molestias quidem ipsa asperiores repudiandae qui. Sapiente sit molestiae facere minus, illum eos in aliquid quisquam rerum nostrum sint, hic quae corrupti, cupiditate eligendi! Obcaecati eius ab laboriosam aliquid dolore dolorum minus soluta pariatur maxime nam provident nihil officia accusamus blanditiis quod id saepe at consectetur rerum ea, modi, ducimus quae. Optio odit aut totam dolorem repellendus, delectus harum sunt odio. Fugit ullam maiores fugiat illo, eveniet dolore. Fugiat laudantium sint illum dolores repellat labore ipsum non corporis maxime doloremque voluptate accusamus, ipsa quasi neque molestiae ea laboriosam harum nulla? Molestiae repellat est, voluptatum odit quod quibusdam sequi voluptatibus nemo voluptas temporibus dicta quia ipsam mollitia, distinctio nulla rerum recusandae voluptatem itaque odio, perspiciatis quisquam dolore natus rem! Fugit a ratione deserunt rerum mollitia quam corporis nobis dolorem quo vitae vel ducimus cum quae magni laudantium odit recusandae corrupti adipisci error, quibusdam ullam ipsa molestias eos doloribus! Delectus fuga sint autem rerum est nemo sit vel cum illo dolore, voluptate facilis, enim consectetur. Aperiam distinctio nobis, dolorem minima explicabo voluptate natus tenetur accusantium voluptatem voluptatum voluptates.</p>
+            </div>
+            <div class="tabContent">
+                <h3>Contact</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ad, aperiam maxime cumque aut repellendus delectus provident fuga accusamus labore, ut blanditiis rerum, at veritatis exercitationem repudiandae explicabo earum quasi?</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let tabButtons = document.querySelectorAll(".navbar button")
+        let tabContent = document.querySelectorAll(".tabContent")
+        function showPanel(panelIndex){
+            tabContent.forEach(function(node){
+                node.style.display="none"
+            });
+            tabContent[panelIndex].style.display="block";
+        }
+        showPanel(0);
+    </script>
+</body>
+</html>

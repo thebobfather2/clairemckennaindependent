@@ -17,9 +17,10 @@
             <div class="">
                 <ul class="d-flex header__menu">
                     <!-- <li><a href="">OVERVIEW</a></li> -->
-                    <li><a href="">FOOD</a></li>
-                    <li><a href="">INTERIORS</a></li>
-                    <li><a href="">STREET</a></li>
+                    <li><button href="" class="tablinks" onclick="showPanel(0)" >FOOD</button></li>
+                    <li><button href="" class="tablinks" onclick="showPanel(1)">INTERIORS</button></li>
+                    <li><button href="" class="tablinks" onclick="showPanel(2)">STREET</button></li>
+                    <li><button href="" class="tablinks" onclick="showPanel(3)">ABOUT ME</button></li>
                 </ul>
             </div>
             <div class="social-icons d-flex">
@@ -31,7 +32,7 @@
         </div>
     </header>
     <main>
-        <div class="container gallary-container d-flex">
+        <div id="food" class="container gallary-container food  d-flex tabcontent">
             <div class="column col1 d-flex">
                 <div><img src="./Assets/Images/Food/1.jpg" alt=""></div>
                 <div><img src="./Assets/Images/Food/18.jpg" alt=""></div>
@@ -60,7 +61,7 @@
         </div>    
         
         
-        <div class="container">
+        <div id="interiors" class="container interior tabcontent" >
             <div class="d-flex gallary-container">
                 <div class="column d-flex">
                     <img src="./Assets/Images/Interior/1.jpg" alt="">
@@ -97,6 +98,23 @@
                 </div>
             </div>
         </div>
+
+        <div id="street" class="container Street tabcontent" ></div>
+
+        <div id="aboutMe" class="container about-me tabcontent" ></div>
     </main>
+
+    <script>
+        let tabButtons = document.querySelectorAll(".tablink")
+        let tabcontent = document.querySelectorAll(".tabcontent")
+        function showPanel(panelIndex){
+            tabcontent.forEach(function(node){
+                node.style.display="none"
+            });
+            tabcontent[panelIndex].style.display="block";
+        }
+        // showPanel(0);
+    </script>
+
 </body>
 </html>
