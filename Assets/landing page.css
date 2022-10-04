@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: absolute;
+    /* border: 2px solid black; */
+    width: 100%;
+    /* margin: auto; */
+}
+.image{
+    width: 100%;
+    display: block;
+    height: 100vh;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+    padding: 2rem;
+}
+.content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 29%;
+    right: 33%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 1;
+    color: white;
+    font-weight: 700;
+}
+.content > h1{
+    font-size: 85px;
+}
+.content > h2{
+    font-size: 50px;
+}
