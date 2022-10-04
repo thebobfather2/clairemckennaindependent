@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabs</title>
     <link rel="stylesheet" href="./Assets/style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="website_container">
         <div class="navbar">
-            <button href="" class="tablinks" onclick="showPanel(0)">FOOD</button></li>
-            <button href="" class="tablinks" onclick="showPanel(1)">INTERIORS</button></li>
-            <button href="" class="tablinks" onclick="showPanel(2)">STREET</button></li>
-            <button href="" class="tablinks" onclick="showPanel(3)">ABOUT ME</button></li>
+            <div class="logo"><button href="" class="tablinks" onclick="showPanel(0)"><img src="./Assets/Images/logo.svg" alt=""></button></div>
+            <div class="menu">
+                <button href="" class="tablinks" onclick="showPanel(0)">FOOD</button>
+                <button href="" class="tablinks" onclick="showPanel(1)">INTERIORS</button>
+                <button href="" class="tablinks" onclick="showPanel(2)">ABOUT ME</button>
+                <button href="" class="tablinks" onclick="showPanel(3)">CONTACT</button>
+            </div>
+            <div class="social-icons">
+                <a href=""><img src="https://img.icons8.com/ios-filled/32/000000/instagram-new--v1.png"/></a>
+                <a href="https://www.behance.net/naveengandla"><img src="https://img.icons8.com/ios-filled/32/000000/behance.png"/></a>
+                <a href=""><img src="https://img.icons8.com/ios-filled/32/000000/apple-mail.png"/></a>
+            </div>
         </div>
         <div class="content">
             <div class="tabContent">
@@ -40,7 +49,7 @@
             </div>
             <div class="tabContent">
                 <div class="img-grid2">
-                    <div class="hs2"><img  src="./Assets/Images/Interior/1.jpg" alt=""></div>
+                    <div class="hs2 ws2"><img  src="./Assets/Images/Interior/1.jpg" alt=""></div>
                     <div><img src="./Assets/Images/Interior/2.jpg" alt=""></div>
                     <div><img src="./Assets/Images/Interior/3.jpg" alt=""></div>
                     <div><img src="./Assets/Images/Interior/4.jpg" alt=""></div>
@@ -67,13 +76,14 @@
     <script>
         let tabButtons = document.querySelectorAll(".navbar button")
         let tabContent = document.querySelectorAll(".tabContent")
+        let tabLinks = document.getElementsByClassName("tablinks")
         function showPanel(panelIndex){
             tabContent.forEach(function(node){
                 node.style.display="none"
             });
             tabContent[panelIndex].style.display="block";
         }
-        showPanel(0);
+        showPanel(1);
     </script>
 </body>
 </html>
