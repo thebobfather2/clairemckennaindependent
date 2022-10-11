@@ -1,40 +1,107 @@
+@import url(//db.onlinewebfonts.com/c/7bacd473607bdcd8da9744c5618a8a9e?family=AW+Conqueror+Didot+Light);
 *{
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Volkhov', serif;
 }
 .website_container{
-    width: 90%;
+    width: 95%;
     margin: auto;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
-
+.nav-section{
+    /* box-shadow: 0px 7px 8px 1px rgba(0,0,0,0.42); */
+    /* box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%); 
+    margin-bottom: 20px;
+    position: sticky;
+    width: 100%;
+}
 .navbar{
-    padding: 1.5rem;
+    padding: 1rem 0;
     /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
     /* gap: 2rem; */
+    align-items: center;
 }
-.navbar > :first-child{
-    max-width: 120px;
+.tLogo{
+    @font-face {
+    font-family: "AW Conqueror Didot Light";
+    src: url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.eot");
+    src: url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.svg#AW Conqueror Didot Light") format("svg"); 
+    };
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    cursor: default;
 }
 .tablinks{
     /* border: 2px solid black; */
     background-color: #fff;
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.3rem;
     border: none;
     cursor: pointer;
+    opacity: 0.85;
 }
+.tablinks:hover{
+    text-decoration: underline;
+    text-underline-offset: .3em;
+    opacity: 1;
+}
+.tablinks:active{
+    text-decoration: underline;
+    text-underline-offset: .3em;
+    opacity: 1;   
+}
+
 .social-icons{
     display: flex;
     /* border: 1px solid black; */
     align-items: center;
     gap: 0.3em;
 }
+[class*="icon-"]{
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    display: inline-block;
+    padding: 1rem;
+    background-position: center center;
+}
+.icon-insta{
+    background-image: url("./Assets/Images/Social-Icons/icons8-instagram-32.png");
+}
+.icon-insta:hover,
+.icon-insta:focus,
+.icon-insta:active{
+    background-image: url("./Assets/Images/Social-Icons/icons8-instagram-32-2.png");
+}
+.icon-behance{
+    background-image: url("./Assets/Images/Social-Icons/icons8-behance-32.png");
+}
+.icon-behance:hover,
+.icon-behance:focus,
+.icon-behance:active{
+    background-image: url("./Assets/Images/Social-Icons/icons8-behance-32-2.png");
+}
+.icon-vimeo{
+    background-image: url("./Assets/Images/Social-Icons/icons8-vimeo-32.png");
+}
+.icon-vimeo:hover,
+.icon-insta:focus,
+.icon-vimeo:active{
+    background-image: url("./Assets/Images/Social-Icons/icons8-vimeo-32\ \(1\).png");
+
+}
+
 
 
 
