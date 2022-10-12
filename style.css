@@ -1,25 +1,31 @@
 @import url(//db.onlinewebfonts.com/c/7bacd473607bdcd8da9744c5618a8a9e?family=AW+Conqueror+Didot+Light);
-*{
+
+* {
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
     color: black;
     font-family: 'Volkhov', serif;
+    margin: 0;
+    padding: 0;
 }
-.website_container{
+
+.website_container {
     width: 95%;
     margin: auto;
     /* max-width: 1440px; */
 }
-.nav-section{
+
+.nav-section {
     /* box-shadow: 0px 7px 8px 1px rgba(0,0,0,0.42); */
     /* box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2); */
-    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%); 
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
     margin-bottom: 20px;
     position: sticky;
     width: 100%;
 }
-.navbar{
+
+.navbar {
     padding: 1rem 0;
     /* border: 2px solid black; */
     display: flex;
@@ -27,23 +33,27 @@
     /* gap: 2rem; */
     align-items: center;
 }
-.tLogo{
+
+.tLogo {
     @font-face {
-    font-family: "AW Conqueror Didot Light";
-    src: url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.eot");
-    src: url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.eot?#iefix") format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.woff2") format("woff2"),
-        url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.woff") format("woff"),
-        url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.ttf") format("truetype"),
-        url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.svg#AW Conqueror Didot Light") format("svg"); 
-    };
+        font-family: "AW Conqueror Didot Light";
+        src: url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.eot");
+        src: url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.eot?#iefix") format("embedded-opentype"),
+            url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.woff2") format("woff2"),
+            url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.woff") format("woff"),
+            url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.ttf") format("truetype"),
+            url("//db.onlinewebfonts.com/t/7bacd473607bdcd8da9744c5618a8a9e.svg#AW Conqueror Didot Light") format("svg");
+    }
+
+    ;
     font-weight: 400;
     font-size: 36px;
     margin: 0;
     padding: 0;
     cursor: default;
 }
-.tablinks{
+
+.tablinks {
     /* border: 2px solid black; */
     background-color: #fff;
     font-weight: 400;
@@ -52,52 +62,64 @@
     cursor: pointer;
     opacity: 0.85;
 }
-.tablinks:hover{
+.tablinks + .tablinks{
+    margin-left: 20px;
+}
+
+.tablinks:hover {
     text-decoration: underline;
     text-underline-offset: .3em;
     opacity: 1;
 }
-.tablinks:active{
+
+.tablinks:active {
     text-decoration: underline;
     text-underline-offset: .3em;
-    opacity: 1;   
+    opacity: 1;
 }
 
-.social-icons{
+.social-icons {
     display: flex;
     /* border: 1px solid black; */
     align-items: center;
     gap: 0.3em;
 }
-[class*="icon-"]{
+
+[class*="icon-"] {
     background-repeat: no-repeat;
     /* background-size: 100% 100%; */
     display: inline-block;
     padding: 1rem;
     background-position: center center;
 }
-.icon-insta{
+
+.icon-insta {
     background-image: url("./Assets/Images/Social-Icons/icons8-instagram-32.png");
 }
+
 .icon-insta:hover,
 .icon-insta:focus,
-.icon-insta:active{
+.icon-insta:active {
     background-image: url("./Assets/Images/Social-Icons/icons8-instagram-32-2.png");
 }
-.icon-behance{
+
+.icon-behance {
     background-image: url("./Assets/Images/Social-Icons/icons8-behance-32.png");
 }
+
 .icon-behance:hover,
 .icon-behance:focus,
-.icon-behance:active{
+.icon-behance:active {
     background-image: url("./Assets/Images/Social-Icons/icons8-behance-32-2.png");
 }
-.icon-vimeo{
+
+.icon-vimeo {
     background-image: url("./Assets/Images/Social-Icons/icons8-vimeo-32.png");
 }
+
 .icon-vimeo:hover,
 .icon-insta:focus,
-.icon-vimeo:active{
+.icon-vimeo:active {
     background-image: url("./Assets/Images/Social-Icons/icons8-vimeo-32\ \(1\).png");
 
 }
@@ -106,35 +128,58 @@
 
 
 
-.tabContent{
-    display: none;
-}
-img{
-    max-width: 100%;
-	min-height: 100%;
-	display: block;
-	object-fit: cover;
+.tabContent {
+    /* display: none; */
 }
 
-.img-grid2{
+img {
+    max-width: 100%;
+    min-height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+figure {
+    all: unset;
+}
+
+.img-grid2 {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-auto-flow: dense;
+    grid-auto-flow: dense;
 }
-.hs2{
+
+.grid-interiors {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 4rem;
+}
+
+.interior-heading {
+    display: block;
+}
+
+.hyderabad-urban {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.kritunga {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.hs2 {
     grid-row: span 2;
 }
-.hs1{
+
+.hs1 {
     grid-row: span 1;
 }
-.ws2{
+
+.ws2 {
     grid-column: span 2;
 }
-.ws6{
+
+.ws6 {
     grid-column: span 4;
 }
-
-
-
-
