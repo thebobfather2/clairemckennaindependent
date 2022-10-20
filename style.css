@@ -81,12 +81,17 @@
     text-underline-offset: .3em;
     opacity: 1;
 }
+.active-link{
+    text-decoration: underline;
+    text-underline-offset: .3em;
+    opacity: 1;
+}
 
 .social-icons {
     display: flex;
     /* border: 1px solid black; */
     align-items: center;
-    gap: 0.3em;
+    gap: .8em;
 }
 
 [class*="icon-"] {
@@ -122,18 +127,19 @@
 }
 
 .icon-vimeo:hover,
-.icon-insta:focus,
+.icon-vimeo:focus,
 .icon-vimeo:active {
     background-image: url("./Assets/Images/Social-Icons/icons8-vimeo-32\ \(1\).png");
 
 }
+.icon-whatsapp{
+    background-image: url("./Assets/Images/Social-Icons/icons8-whatsapp-32.png");
+}
+.icon-whatsapp:hover,
+.icon-whatsapp:focus,
+.icon-whatsapp:active {
+    background-image: url("./Assets/Images/Social-Icons/icons8-whatsapp-32-2.png");
 
-
-
-
-
-.tabContent {
-    /* display: none; */
 }
 
 img {
@@ -186,4 +192,31 @@ figure {
 
 .ws6 {
     grid-column: span 4;
+}
+/* about me */
+.aboutMe-wrapper{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+
+.aboutMe-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.aboutMe-content > p{
+    max-width: 60ch;
+    font-size: 24px;
+}
+.aboutMe-content > h3{
+    font-size: 28px;
+}
+.about-me-img{
+    max-height: 90vh;
+}
+.about-me-img>img{
+    height: 700px;
 }
