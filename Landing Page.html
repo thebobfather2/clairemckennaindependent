@@ -8,13 +8,29 @@
     <link rel="stylesheet" href="/landing page.css">
 </head>
 <body>
-<ul class="slideshow">
-	<li><span></span></li>
-  <li><span></span></li>
-	<li><span></span></li>
-	<li><span></span></li>
-	<li><span></span></li>
-</ul>
+  <section>
+    <a href="/food.html" class="slideshow">
+      <figure><img src="/Assets/Images/Pages/Landing-page/1.webp" alt=""></figure>
+      <figure><img src="/Assets/Images/Pages/Landing-page/2.webp" alt=""></figure>
+      <figure><img src="/Assets/Images/Pages/Landing-page/3.webp" alt=""></figure>
+      <figure><img src="/Assets/Images/Pages/Landing-page/4.webp" alt=""></figure>
+      <figure><img src="/Assets/Images/Pages/Landing-page/5.webp" alt=""></figure>
+    </a>
+  </section>
+ 
+  <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+  <script>
+    $(".slideshow > figure:gt(0)").hide();
+
+      setInterval(function() { 
+        $('.slideshow > figure:first')
+        .fadeOut(500)
+        .next()
+        .fadeIn(500)
+        .end()
+        .appendTo('.slideshow');
+      }, 2000);
+  </script>
 </body>
 </html>
 
