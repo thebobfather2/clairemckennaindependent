@@ -27,6 +27,7 @@
     width: 100%;
     background-color: #fff;
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    z-index: 10;
 }
 
 .navbar {
