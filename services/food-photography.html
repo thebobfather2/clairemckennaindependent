@@ -45,8 +45,8 @@
         </div>
 
     </section>
-    <div class="mobile-menu">
-        <div class="menu" id="myLinks">
+    <div class="">
+        <div class=" mobile-menu" id="myLinks">
             <a href="/services/food-photography.html" class="tablinks active-link">FOOD</a>
             <a href="/services/interior-photography.html" class="tablinks">INTERIORS</a>
             <a href="/services/about-me.html" class="tablinks">ABOUT ME</a>
@@ -87,10 +87,10 @@
     <script>
     function myFunction() {
         var x = document.getElementById("myLinks");
-        if (x.style.display === "flex") {
-        x.style.display = "none";
-        } else {
+        if (x.style.display === "none") {
         x.style.display = "flex";
+        } else {
+        x.style.display = "none";
         }
     }
     </script>
