@@ -21,7 +21,7 @@
 
 @media only screen and (min-width: 720px) {
   .website_container {
-    margin-top: 6.5rem;
+    margin-top: 5.5rem;
   }
 }
 
@@ -43,11 +43,20 @@
 }
 
 .slideshow>figure {
-  height: calc(100vh - 4rem);
-  width: calc(100vw - 4rem);
+  height: calc(100vh - 2rem);
+  width: calc(100vw - 2rem);
   position: absolute;
-  top: 2rem;
-  left: 2rem;
+  top: 1rem;
+  left: 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .slideshow>figure {
+    height: calc(100vh - 4rem);
+    width: calc(100vw - 4rem);
+    top: 2rem;
+    left: 2rem;
+  }
 }
 
 .lp-section {
@@ -61,7 +70,7 @@
 
 .lp-name {
   font-family: 'Playfair Display', serif !important;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 400 !important;
   color: black;
   position: absolute;
@@ -75,6 +84,19 @@
 
 .lp-name>h1 .lp-name>p {
   background-color: transparent;
+
+}
+
+@media only screen and (min-width: 500px) {
+  .lp-name {
+    font-size: 2.5rem;
+  }
+}
+
+#lp-heading {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 400 !important;
+
 }
 
 img {
@@ -90,13 +112,34 @@ figure {
 
 .img-grid2 {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+
   grid-auto-flow: dense;
 }
 
 .int {
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: 1fr;
+}
+
+
+@media only screen and (min-width: 500px) {
+  .img-grid2 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+
+  }
+
+  .int {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .int {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
 }
 
 .int img {
@@ -161,6 +204,11 @@ figure {
   flex-direction: column;
   gap: 5%;
   justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 10rem;
+
 }
 
 .aboutMe-content {
@@ -171,9 +219,11 @@ figure {
   padding-bottom: 2rem;
 }
 
+
+
 .aboutMe-content>p {
   max-width: 60ch;
-  font-size: 24px;
+  font-size: 1.25rem;
 }
 
 .aboutMe-content>h3 {
@@ -188,13 +238,32 @@ figure {
   height: 700px;
 }
 
+@media only screen and (min-width: 720px) {
+  .aboutMe-wrapper {
+    padding-top: 10rem;
+  }
+
+  .aboutMe-content>p {
+    font-size: 1.75rem;
+
+  }
+}
+
 /* Contact Form */
 
 .formContent {
   display: block;
   margin: auto;
-  width: 30%;
+  width: 75%;
   margin-top: 12rem;
+}
+
+@media only screen and (min-width: 720px) {
+  .formContent {
+    /* width: 50%; */
+    max-width: 700px;
+
+  }
 }
 
 .cont-page {
@@ -263,17 +332,7 @@ figure {
   padding: 16px 32px;
 }
 
-@media only screen and (max-width: 1100px) {
-  .img-grid2 {
-    gap: 0.5rem;
-    grid-template-columns: 1fr 1fr;
-  }
 
-  .int {
-    grid-template-columns: 1fr;
-
-  }
-}
 
 float {
   position: fixed;
@@ -306,7 +365,6 @@ float {
 }
 
 @media only screen and (min-width: 720px) {
-
   .wa-float {
     width: 70px;
     height: 70px;
