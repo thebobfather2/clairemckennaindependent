@@ -72,7 +72,7 @@
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   min-height: 100%;
   display: block;
   object-fit: cover;
@@ -90,7 +90,11 @@ figure {
 }
 
 .int {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.int img {
+  /* object-fit: contain; */
 }
 
 .grid-interiors {
