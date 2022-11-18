@@ -16,7 +16,13 @@
   width: 95%;
   margin: auto;
   max-width: 1920px;
-  margin-top: 6.5rem;
+  margin-top: 3.75rem;
+}
+
+@media only screen and (min-width: 720px) {
+  .website_container {
+    margin-top: 6.5rem;
+  }
 }
 
 /* Slide Show */
@@ -258,63 +264,23 @@ figure {
 }
 
 @media only screen and (max-width: 1100px) {
-  .nav-section {
-    display: none;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2rem;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    z-index: 2;
-  }
-
-  /* .navbar {
-    flex-direction: row;
-    align-items: center;
-  } */
-  .tablinks+.tablinks {
-    margin-left: 0px;
-  }
-
-  .mobile-menu {
-    /* background-color: #fff; */
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    /* justify-content: center; */
-    align-items: center;
-    background-color: white;
-    width: 100%;
-    padding: 2rem;
-    margin: auto;
-    /* z-index: 3; */
-    position: fixed;
-    /* right: 5%; */
-    top: 65px;
-    z-index: 10;
-    height: 100vh;
-  }
-
   .img-grid2 {
+    gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
   }
 
-  .tLogo {
-    font-size: 1.5rem;
+  .int {
+    grid-template-columns: 1fr;
+
   }
 }
 
-.float {
+float {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 40px;
-  right: 40px;
+  bottom: 12px;
+  right: 12px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;
@@ -326,4 +292,24 @@ figure {
 
 .my-float {
   margin-top: 16px;
+}
+
+.wa-float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 12px;
+  right: 1.5vw;
+  background-color: #25D366;
+  padding: 0.6rem;
+  border-radius: 1000px;
+}
+
+@media only screen and (min-width: 720px) {
+
+  .wa-float {
+    width: 70px;
+    height: 70px;
+    padding: 0.8rem;
+  }
 }

@@ -42,6 +42,8 @@ body.nav-active {
 .nav-container {
   background-color: #f5f5f5;
   padding-block: 0.5rem;
+  width: 95%;
+
 }
 
 .title-sm {
@@ -112,7 +114,7 @@ button {
 
 .nav-logo {
   cursor: pointer;
-  font-size: 2.5rem;
+  font-size: 1.25rem;
   font-family: "Lora", serif;
   font-weight: 400;
 }
@@ -178,7 +180,7 @@ button {
 .social-icons {
   display: flex;
   align-items: center;
-  gap: 0.8em;
+  /* gap: 0.5rem; */
 }
 
 [class*="icon-"] {
@@ -186,6 +188,7 @@ button {
   display: inline-block;
   padding: 1rem;
   background-position: center center;
+  background-size: 1.5rem;
 }
 
 .icon-insta {
@@ -237,34 +240,18 @@ button {
    */
 
   .nav-container {
-    max-width: 640px;
-    width: 100%;
+    /* max-width: 640px; */
+    width: 95%;
     margin-inline: auto;
   }
 
-  /**
- * responsive for large than 768px screen
- */
 
-  @media (min-width: 768px) {
-    .nav-container {
-      max-width: 768px;
-    }
-  }
 
   /**
  * responsive for large than 992px screen
  */
 
   @media (min-width: 992px) {
-    /**
-   * REUSED STYLE
-   */
-
-    .nav-container {
-      max-width: 1024px;
-    }
-
 
     /**
    * nav-header
