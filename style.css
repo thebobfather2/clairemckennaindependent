@@ -33,6 +33,13 @@
   object-fit: cover;
 }
 
+@media only screen and (max-width: 500px) {
+  .lpImage {
+    object-fit: contain;
+
+  }
+}
+
 .slideshow {
   /* margin:auto; 
     width: 100%;
