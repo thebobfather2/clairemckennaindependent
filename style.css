@@ -99,6 +99,29 @@
 
 }
 
+.enter {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: end;
+  justify-content: center;
+  gap: 1rem;
+  border: black 1px solid;
+  max-width: fit-content;
+  margin: auto;
+  border-radius: 0.5rem;
+  padding-block: 0.25em;
+  padding-inline: 1em;
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .enter {
+    font-size: 2rem;
+    border: black 1.5px solid;
+
+  }
+}
+
 img {
   width: 100%;
   min-height: 100%;
@@ -140,10 +163,6 @@ figure {
   .int {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
-}
-
-.int img {
-  /* object-fit: contain; */
 }
 
 .grid-interiors {
