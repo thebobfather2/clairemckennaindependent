@@ -42,7 +42,7 @@
   z-index: 2;
 }
 
-.slideshow>figure {
+.slideshow>picture {
   height: calc(100vh - 2rem);
   width: calc(100vw - 2rem);
   position: absolute;
@@ -51,7 +51,7 @@
 }
 
 @media only screen and (min-width: 500px) {
-  .slideshow>figure {
+  .slideshow>picture {
     height: calc(100vh - 4rem);
     width: calc(100vw - 4rem);
     top: 2rem;
@@ -129,7 +129,7 @@ img {
   object-fit: cover;
 }
 
-figure {
+picture {
   all: unset;
 }
 
@@ -185,7 +185,7 @@ figure {
   /* column-count: 3; */
 }
 
-.hyderabad-urban>figure>img {
+.hyderabad-urban>picture>img {
   max-width: auto;
   max-height: auto;
   display: inline-block;
@@ -312,7 +312,7 @@ figure {
 }
 
 /* Display text on hover */
-.figure-container {
+.picture-container {
   position: relative;
   cursor: pointer;
   font-size: 1rem;
@@ -336,11 +336,11 @@ figure {
   text-align: center;
 }
 
-.figure-container:hover .image {
+.picture-container:hover .image {
   opacity: 0.3;
 }
 
-.figure-container:hover .middle {
+.picture-container:hover .middle {
   opacity: 1;
 }
 

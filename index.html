@@ -17,32 +17,32 @@
   </a>
   <section class="lp-section">
     <a href="/services/interior-photography" class="slideshow">
-      <figure>
+      <picture>
+        <source srcset="services/Images/Pages/Landing-page/mobile/1.jpg" media="(max-width: 500px)">
         <img class="lpImage" src="/services/Images/Pages/Landing-page/1.webp" alt="" />
-      </figure>
-      <figure>
+      </picture>
+      <picture>
         <img class="lpImage" src="/services/Images/Pages/Landing-page/2.webp" alt="" />
-      </figure>
-      <figure>
+      </picture>
+      <picture>
         <img class="lpImage" src="/services/Images/Pages/Landing-page/3.webp" alt="" />
-      </figure>
-      <figure>
-        <source srcset="services/Images/Pages/Landing-page/mobile/1.jpg" media="(min-width: 600px)">
+      </picture>
+      <picture>
         <img class="lpImage" src="/services/Images/Pages/Landing-page/4.webp" alt="" />
-      </figure>
-      <figure>
-        <source srcset="services/Images/Pages/Landing-page/mobile/2.jpg" media="(min-width: 600px)">
+      </picture>
+      <picture>
+        <source srcset="services/Images/Pages/Landing-page/mobile/2.jpg" media="(max-width: 500px)">
         <img class="lpImage" src="/services/Images/Pages/Landing-page/5.webp" alt="" />
-      </figure>
+      </picture>
     </a>
   </section>
 
   <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="
     crossorigin="anonymous"></script>
   <script>
-    $(".slideshow > figure:gt(0)").hide();
+    $(".slideshow > picture:gt(0)").hide();
     setInterval(function () {
-      $(".slideshow > figure:first")
+      $(".slideshow > picture:first")
         .fadeOut(500)
         .next()
         .fadeIn(500)
