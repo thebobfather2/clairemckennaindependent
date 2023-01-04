@@ -101,23 +101,28 @@
 
 .enter {
   display: flex;
-  font-size: 1.5rem;
-  align-items: end;
+  font-size: 1.25rem;
+  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  border: black 1px solid;
+  gap: 0.5rem;
+  border: rgb(0, 0, 0) 1px solid;
   max-width: fit-content;
   margin: auto;
   border-radius: 0.5rem;
-  padding-block: 0.25em;
-  padding-inline: 1em;
-  margin-top: 2rem;
+  padding-block: 1.25rem;
+  padding-inline: 1.5rem;
+  position: absolute;
+  bottom: 2rem;
+  top: 90vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 @media only screen and (min-width: 500px) {
   .enter {
     font-size: 2rem;
-    border: black 1.5px solid;
+    border: rgb(0, 0, 0) 1.5px solid;
 
   }
 }
