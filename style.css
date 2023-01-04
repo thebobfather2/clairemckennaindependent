@@ -124,10 +124,6 @@
     font-size: 2rem;
     border: rgb(0, 0, 0) 1.5px solid;
   }
-
-  img {
-    object-fit: contain;
-  }
 }
 
 img {
@@ -206,7 +202,6 @@ picture {
 
 .pristine-estates {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .hs2 {
