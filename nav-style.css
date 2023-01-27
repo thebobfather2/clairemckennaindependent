@@ -112,7 +112,7 @@ button {
 .navbar-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: right;
   margin: auto;
 }
 
@@ -226,35 +226,35 @@ button {
 }
 
 .icon-insta {
-  background-image: url("/services/Images/Social-Icons/icons8-instagram-32.png");
+  background-image: url("/photography/Images/Social-Icons/icons8-instagram-32.png");
 }
 
 .icon-insta:hover {
-  background-image: url("/services/Images/Social-Icons/icons8-instagram-32-2.png");
+  background-image: url("/photography/Images/Social-Icons/icons8-instagram-32-2.png");
 }
 
 .icon-behance {
-  background-image: url("/services/Images/Social-Icons/icons8-behance-32.png");
+  background-image: url("/photography/Images/Social-Icons/icons8-behance-32.png");
 }
 
 .icon-behance:hover {
-  background-image: url("/services/Images/Social-Icons/icons8-behance-32-2.png");
+  background-image: url("/photography/Images/Social-Icons/icons8-behance-32-2.png");
 }
 
 .icon-vimeo {
-  background-image: url("/services/Images/Social-Icons/icons8-vimeo-32.png");
+  background-image: url("/photography/Images/Social-Icons/icons8-vimeo-32.png");
 }
 
 .icon-vimeo:hover {
-  background-image: url("/services/Images/Social-Icons/icons8-vimeo-32\ \(1\).png");
+  background-image: url("/photography/Images/Social-Icons/icons8-vimeo-32\ \(1\).png");
 }
 
 .icon-whatsapp {
-  background-image: url("/services/Images/Social-Icons/icons8-whatsapp-32.png");
+  background-image: url("/photography/Images/Social-Icons/icons8-whatsapp-32.png");
 }
 
 .icon-whatsapp:hover {
-  background-image: url("/services/Images/Social-Icons/icons8-whatsapp-32-2.png");
+  background-image: url("/photography/Images/Social-Icons/icons8-whatsapp-32-2.png");
 }
 
 
